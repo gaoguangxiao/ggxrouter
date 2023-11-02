@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		134E8A20B55BA1BFAA96D170527B7A3D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05621814D3EE71CA91F0E2AC8C2C5FF /* ReplaceMe.swift */; };
+		1C27D83701AC4E4565B911BC1992A14A /* Pods-GXSwiftRouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DEAB3945F15CB32685F2CDBAFC9372 /* Pods-GXSwiftRouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		384DC6783D31E7AC17A2BA85285D29CE /* Pods-GXSwiftRouter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B17DC94AC66A72C8B5965DA2B09500F /* Pods-GXSwiftRouter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DA7DFFC94FEF8BAEDA30A489924A71B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9190A71996367984B86ACD3DF891DADF /* GXSwiftRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C52945E1F6F3F6ADBAFA9DF5AE4C3F96 /* GXSwiftRouter-dummy.m */; };
+		ACF3E21248B270899AA471F904DA407F /* GXSwiftRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FC39C5B5940A5C527F51559FAFF22F /* GXSwiftRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEA7A3204C85876772B9FE64468D0291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B3A16A167F1B244B0DD6ADFC6B3F3AB6 /* Pods-GXSwiftRouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9759DF60795C032FC09DAB9C08FCAE /* Pods-GXSwiftRouter_Tests-dummy.m */; };
+		BFB2A785665402FAACAF1FED22F47AC6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343334CD61AEED0CDF94AF4FABF357A2 /* Router.swift */; };
+		C7D349932B2E9BED8020CBD5EC2C5D28 /* Pods-GXSwiftRouter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450D567B7B78EDD5643323A1EAA5CAD /* Pods-GXSwiftRouter_Example-dummy.m */; };
+		DBDF41EC7C53F270B6C6F2F3A4272A25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EFFBAC60765B16AF2B26EEA553927D24 /* OpenURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F9B9252AB8465BE571C31FA64343F /* OpenURLHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA123282DA4264C5E34540E6EDFE9AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACC3AEA0F6B46FB7F90C3F1205F559E7;
+			remoteInfo = GXSwiftRouter;
+		};
+		E150DA9052570543FD99A271CCC0D6E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C9138C92B183DE8CB67D6BFA4618A1A;
+			remoteInfo = "Pods-GXSwiftRouter_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00289468145A27C3E3BB602CEC29D3D2 /* Pods-GXSwiftRouter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GXSwiftRouter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		06533DB69658B88AEB9B42561A00E722 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		094086C19E757B110D0B1AA55654E94E /* Pods-GXSwiftRouter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GXSwiftRouter_Example.modulemap"; sourceTree = "<group>"; };
+		0B17DC94AC66A72C8B5965DA2B09500F /* Pods-GXSwiftRouter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GXSwiftRouter_Example-umbrella.h"; sourceTree = "<group>"; };
+		1698BB8B6A66AECAC53E3BFE7C3E761F /* GXSwiftRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GXSwiftRouter.modulemap; sourceTree = "<group>"; };
+		343334CD61AEED0CDF94AF4FABF357A2 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = GXSwiftRouter/Classes/Router.swift; sourceTree = "<group>"; };
+		37B853980C275734B6810335D5D8D131 /* Pods-GXSwiftRouter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GXSwiftRouter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3B262A9EE1D80FF87AD34E3F6D92DA0E /* Pods-GXSwiftRouter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GXSwiftRouter_Example-Info.plist"; sourceTree = "<group>"; };
+		40E063D33A600F6450685EB45E2AD0E0 /* Pods-GXSwiftRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GXSwiftRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		41DEAB3945F15CB32685F2CDBAFC9372 /* Pods-GXSwiftRouter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GXSwiftRouter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		45ACA45D9DC529CC7D0F5057F0457703 /* GXSwiftRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GXSwiftRouter.release.xcconfig; sourceTree = "<group>"; };
+		499C60A3B9C931B42B316A7425A0A09C /* GXSwiftRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GXSwiftRouter.debug.xcconfig; sourceTree = "<group>"; };
+		4DED5947E4FFBD45359B751635EB1141 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4ED76E4B46F6F67AC756E1DAE984DF95 /* Pods-GXSwiftRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GXSwiftRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		580D3A5496240769009FD30D6B87206A /* Pods-GXSwiftRouter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GXSwiftRouter_Tests.modulemap"; sourceTree = "<group>"; };
+		5B9759DF60795C032FC09DAB9C08FCAE /* Pods-GXSwiftRouter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GXSwiftRouter_Tests-dummy.m"; sourceTree = "<group>"; };
+		64420A9538EC25BF3306EEEDD6CB4BBD /* GXSwiftRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GXSwiftRouter-prefix.pch"; sourceTree = "<group>"; };
+		644F1A5057AF0C4B1ABEE9E949CA0FC0 /* Pods-GXSwiftRouter_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GXSwiftRouter_Example"; path = Pods_GXSwiftRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6450D567B7B78EDD5643323A1EAA5CAD /* Pods-GXSwiftRouter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GXSwiftRouter_Example-dummy.m"; sourceTree = "<group>"; };
+		6D37B04D3FE34FFF9E3CC2A3F718EA5F /* Pods-GXSwiftRouter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GXSwiftRouter_Tests-Info.plist"; sourceTree = "<group>"; };
+		6F50462485EA10752FE55EA7CABDDA9A /* Pods-GXSwiftRouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GXSwiftRouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F7F9B9252AB8465BE571C31FA64343F /* OpenURLHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenURLHandler.swift; path = GXSwiftRouter/Classes/OpenURLHandler.swift; sourceTree = "<group>"; };
+		724B90389390B5862BE4233CEC4A3166 /* Pods-GXSwiftRouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GXSwiftRouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		754765E22C3A2067CED884C0F315830D /* GXSwiftRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GXSwiftRouter-Info.plist"; sourceTree = "<group>"; };
+		760A254C0E7DD8632A11CA888C668F0F /* Pods-GXSwiftRouter_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GXSwiftRouter_Tests"; path = Pods_GXSwiftRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F6D495C27D4BA16985057740E8F8E7 /* Pods-GXSwiftRouter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GXSwiftRouter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EC110702D12C9DD4CCD1E4BC2F11FC8 /* Pods-GXSwiftRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GXSwiftRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3B6E26A373FDEAD98A6685AE5114D05 /* GXSwiftRouter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GXSwiftRouter; path = GXSwiftRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52945E1F6F3F6ADBAFA9DF5AE4C3F96 /* GXSwiftRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GXSwiftRouter-dummy.m"; sourceTree = "<group>"; };
+		D00CD11E5859C22541D388901DB0118D /* GXSwiftRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GXSwiftRouter.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		D05621814D3EE71CA91F0E2AC8C2C5FF /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = GXSwiftRouter/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		E0FEA8529A298E2A7914CB07362B22BB /* Pods-GXSwiftRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GXSwiftRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FC39C5B5940A5C527F51559FAFF22F /* GXSwiftRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GXSwiftRouter-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49333F282E32ADAE1695C35B086D20D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA7A3204C85876772B9FE64468D0291 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B1DB177B341DBC1B52894B7D693E7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDF41EC7C53F270B6C6F2F3A4272A25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0782259FE3B5005CE8A93338869AE6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA7DFFC94FEF8BAEDA30A489924A71B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0759EE95AC6440B97563A0B25D2D755B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1185BFA452EF4F09C4519B950463C09 /* GXSwiftRouter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		41AF79519A9AA540EFD15B603A867CE5 /* Pods-GXSwiftRouter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				580D3A5496240769009FD30D6B87206A /* Pods-GXSwiftRouter_Tests.modulemap */,
+				6F50462485EA10752FE55EA7CABDDA9A /* Pods-GXSwiftRouter_Tests-acknowledgements.markdown */,
+				724B90389390B5862BE4233CEC4A3166 /* Pods-GXSwiftRouter_Tests-acknowledgements.plist */,
+				5B9759DF60795C032FC09DAB9C08FCAE /* Pods-GXSwiftRouter_Tests-dummy.m */,
+				6D37B04D3FE34FFF9E3CC2A3F718EA5F /* Pods-GXSwiftRouter_Tests-Info.plist */,
+				41DEAB3945F15CB32685F2CDBAFC9372 /* Pods-GXSwiftRouter_Tests-umbrella.h */,
+				40E063D33A600F6450685EB45E2AD0E0 /* Pods-GXSwiftRouter_Tests.debug.xcconfig */,
+				4ED76E4B46F6F67AC756E1DAE984DF95 /* Pods-GXSwiftRouter_Tests.release.xcconfig */,
+			);
+			name = "Pods-GXSwiftRouter_Tests";
+			path = "Target Support Files/Pods-GXSwiftRouter_Tests";
+			sourceTree = "<group>";
+		};
+		4ACF088D9AC430FA23EBDA690ABD00BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3B6E26A373FDEAD98A6685AE5114D05 /* GXSwiftRouter */,
+				644F1A5057AF0C4B1ABEE9E949CA0FC0 /* Pods-GXSwiftRouter_Example */,
+				760A254C0E7DD8632A11CA888C668F0F /* Pods-GXSwiftRouter_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B0190AA5DB8D7B7D24AD50C14B67ADD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D00CD11E5859C22541D388901DB0118D /* GXSwiftRouter.podspec */,
+				4DED5947E4FFBD45359B751635EB1141 /* LICENSE */,
+				06533DB69658B88AEB9B42561A00E722 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A1185BFA452EF4F09C4519B950463C09 /* GXSwiftRouter */ = {
+			isa = PBXGroup;
+			children = (
+				6F7F9B9252AB8465BE571C31FA64343F /* OpenURLHandler.swift */,
+				D05621814D3EE71CA91F0E2AC8C2C5FF /* ReplaceMe.swift */,
+				343334CD61AEED0CDF94AF4FABF357A2 /* Router.swift */,
+				8B0190AA5DB8D7B7D24AD50C14B67ADD /* Pod */,
+				D54A8E5FFC48A3CAC75D42E4288E2EEF /* Support Files */,
+			);
+			name = GXSwiftRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ADDE1C4AFF7B9329FBD11B677C3FACE3 /* Pods-GXSwiftRouter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				094086C19E757B110D0B1AA55654E94E /* Pods-GXSwiftRouter_Example.modulemap */,
+				00289468145A27C3E3BB602CEC29D3D2 /* Pods-GXSwiftRouter_Example-acknowledgements.markdown */,
+				78F6D495C27D4BA16985057740E8F8E7 /* Pods-GXSwiftRouter_Example-acknowledgements.plist */,
+				6450D567B7B78EDD5643323A1EAA5CAD /* Pods-GXSwiftRouter_Example-dummy.m */,
+				37B853980C275734B6810335D5D8D131 /* Pods-GXSwiftRouter_Example-frameworks.sh */,
+				3B262A9EE1D80FF87AD34E3F6D92DA0E /* Pods-GXSwiftRouter_Example-Info.plist */,
+				0B17DC94AC66A72C8B5965DA2B09500F /* Pods-GXSwiftRouter_Example-umbrella.h */,
+				E0FEA8529A298E2A7914CB07362B22BB /* Pods-GXSwiftRouter_Example.debug.xcconfig */,
+				7EC110702D12C9DD4CCD1E4BC2F11FC8 /* Pods-GXSwiftRouter_Example.release.xcconfig */,
+			);
+			name = "Pods-GXSwiftRouter_Example";
+			path = "Target Support Files/Pods-GXSwiftRouter_Example";
+			sourceTree = "<group>";
+		};
+		BF7F74D27942E1ED041FD40B5CBA48A2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADDE1C4AFF7B9329FBD11B677C3FACE3 /* Pods-GXSwiftRouter_Example */,
+				41AF79519A9AA540EFD15B603A867CE5 /* Pods-GXSwiftRouter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				0759EE95AC6440B97563A0B25D2D755B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4ACF088D9AC430FA23EBDA690ABD00BD /* Products */,
+				BF7F74D27942E1ED041FD40B5CBA48A2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D54A8E5FFC48A3CAC75D42E4288E2EEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1698BB8B6A66AECAC53E3BFE7C3E761F /* GXSwiftRouter.modulemap */,
+				C52945E1F6F3F6ADBAFA9DF5AE4C3F96 /* GXSwiftRouter-dummy.m */,
+				754765E22C3A2067CED884C0F315830D /* GXSwiftRouter-Info.plist */,
+				64420A9538EC25BF3306EEEDD6CB4BBD /* GXSwiftRouter-prefix.pch */,
+				F0FC39C5B5940A5C527F51559FAFF22F /* GXSwiftRouter-umbrella.h */,
+				499C60A3B9C931B42B316A7425A0A09C /* GXSwiftRouter.debug.xcconfig */,
+				45ACA45D9DC529CC7D0F5057F0457703 /* GXSwiftRouter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GXSwiftRouter";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BB167148242E9DFB3892F4E190A89B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C27D83701AC4E4565B911BC1992A14A /* Pods-GXSwiftRouter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BBF20CD851C60242A28A1D08C709EFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384DC6783D31E7AC17A2BA85285D29CE /* Pods-GXSwiftRouter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DFF6693A96EA99406BD4C9F65C0F34B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF3E21248B270899AA471F904DA407F /* GXSwiftRouter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		117D43415D5D573CD98E8EC06B978F74 /* Pods-GXSwiftRouter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1156365DE68B2DCD3291D5974BC3851A /* Build configuration list for PBXNativeTarget "Pods-GXSwiftRouter_Tests" */;
+			buildPhases = (
+				1BB167148242E9DFB3892F4E190A89B9 /* Headers */,
+				4A1783766C93EB10E9B43C663DDB857E /* Sources */,
+				9B1DB177B341DBC1B52894B7D693E7F7 /* Frameworks */,
+				C57866591F3F3955102C08E1FF212893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B5331F97BAD25D538EAB4254C3DB7A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-GXSwiftRouter_Tests";
+			productName = Pods_GXSwiftRouter_Tests;
+			productReference = 760A254C0E7DD8632A11CA888C668F0F /* Pods-GXSwiftRouter_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		4C9138C92B183DE8CB67D6BFA4618A1A /* Pods-GXSwiftRouter_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F7B201E99F557CD4EC469C1DF7E1CB /* Build configuration list for PBXNativeTarget "Pods-GXSwiftRouter_Example" */;
+			buildPhases = (
+				1BBF20CD851C60242A28A1D08C709EFD /* Headers */,
+				E003008EB1FC6F4839820D3821F7A188 /* Sources */,
+				49333F282E32ADAE1695C35B086D20D5 /* Frameworks */,
+				A156F23F9BA07BFA02C1564B6B7D3F88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDFD3ABCF44193F242F315F245C92FB /* PBXTargetDependency */,
+			);
+			name = "Pods-GXSwiftRouter_Example";
+			productName = Pods_GXSwiftRouter_Example;
+			productReference = 644F1A5057AF0C4B1ABEE9E949CA0FC0 /* Pods-GXSwiftRouter_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACC3AEA0F6B46FB7F90C3F1205F559E7 /* GXSwiftRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96B4D714F094CAB34A2B75A71F80B304 /* Build configuration list for PBXNativeTarget "GXSwiftRouter" */;
+			buildPhases = (
+				2DFF6693A96EA99406BD4C9F65C0F34B /* Headers */,
+				2FF6030D06493499A57A8FD1D236CAA0 /* Sources */,
+				C0782259FE3B5005CE8A93338869AE6E /* Frameworks */,
+				55FF444703B764945276F3765EDA0068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GXSwiftRouter;
+			productName = GXSwiftRouter;
+			productReference = A3B6E26A373FDEAD98A6685AE5114D05 /* GXSwiftRouter */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4ACF088D9AC430FA23EBDA690ABD00BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC3AEA0F6B46FB7F90C3F1205F559E7 /* GXSwiftRouter */,
+				4C9138C92B183DE8CB67D6BFA4618A1A /* Pods-GXSwiftRouter_Example */,
+				117D43415D5D573CD98E8EC06B978F74 /* Pods-GXSwiftRouter_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55FF444703B764945276F3765EDA0068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A156F23F9BA07BFA02C1564B6B7D3F88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57866591F3F3955102C08E1FF212893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FF6030D06493499A57A8FD1D236CAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9190A71996367984B86ACD3DF891DADF /* GXSwiftRouter-dummy.m in Sources */,
+				EFFBAC60765B16AF2B26EEA553927D24 /* OpenURLHandler.swift in Sources */,
+				134E8A20B55BA1BFAA96D170527B7A3D /* ReplaceMe.swift in Sources */,
+				BFB2A785665402FAACAF1FED22F47AC6 /* Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A1783766C93EB10E9B43C663DDB857E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A16A167F1B244B0DD6ADFC6B3F3AB6 /* Pods-GXSwiftRouter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E003008EB1FC6F4839820D3821F7A188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D349932B2E9BED8020CBD5EC2C5D28 /* Pods-GXSwiftRouter_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B5331F97BAD25D538EAB4254C3DB7A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GXSwiftRouter_Example";
+			target = 4C9138C92B183DE8CB67D6BFA4618A1A /* Pods-GXSwiftRouter_Example */;
+			targetProxy = E150DA9052570543FD99A271CCC0D6E7 /* PBXContainerItemProxy */;
+		};
+		BEDFD3ABCF44193F242F315F245C92FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXSwiftRouter;
+			target = ACC3AEA0F6B46FB7F90C3F1205F559E7 /* GXSwiftRouter */;
+			targetProxy = DA123282DA4264C5E34540E6EDFE9AFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		65E13F19FF15F490D9AA1C51C8AD29B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499C60A3B9C931B42B316A7425A0A09C /* GXSwiftRouter.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GXSwiftRouter/GXSwiftRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GXSwiftRouter/GXSwiftRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GXSwiftRouter/GXSwiftRouter.modulemap";
+				PRODUCT_MODULE_NAME = GXSwiftRouter;
+				PRODUCT_NAME = GXSwiftRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6868F80516946158FDC164B6F6049D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ED76E4B46F6F67AC756E1DAE984DF95 /* Pods-GXSwiftRouter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GXSwiftRouter_Tests/Pods-GXSwiftRouter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GXSwiftRouter_Tests/Pods-GXSwiftRouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8DF444AD21FB6B975A5BDC18DB7DF235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC110702D12C9DD4CCD1E4BC2F11FC8 /* Pods-GXSwiftRouter_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GXSwiftRouter_Example/Pods-GXSwiftRouter_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GXSwiftRouter_Example/Pods-GXSwiftRouter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6A75AD7E8053F7F6032DB1690AC7F99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E063D33A600F6450685EB45E2AD0E0 /* Pods-GXSwiftRouter_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GXSwiftRouter_Tests/Pods-GXSwiftRouter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GXSwiftRouter_Tests/Pods-GXSwiftRouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A76242A3F1C2933DB062486E26004BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FEA8529A298E2A7914CB07362B22BB /* Pods-GXSwiftRouter_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GXSwiftRouter_Example/Pods-GXSwiftRouter_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GXSwiftRouter_Example/Pods-GXSwiftRouter_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C69DB428C13519F5B4B73EAADE420BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45ACA45D9DC529CC7D0F5057F0457703 /* GXSwiftRouter.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GXSwiftRouter/GXSwiftRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GXSwiftRouter/GXSwiftRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GXSwiftRouter/GXSwiftRouter.modulemap";
+				PRODUCT_MODULE_NAME = GXSwiftRouter;
+				PRODUCT_NAME = GXSwiftRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1156365DE68B2DCD3291D5974BC3851A /* Build configuration list for PBXNativeTarget "Pods-GXSwiftRouter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A75AD7E8053F7F6032DB1690AC7F99 /* Debug */,
+				6868F80516946158FDC164B6F6049D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F7B201E99F557CD4EC469C1DF7E1CB /* Build configuration list for PBXNativeTarget "Pods-GXSwiftRouter_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76242A3F1C2933DB062486E26004BD7 /* Debug */,
+				8DF444AD21FB6B975A5BDC18DB7DF235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B4D714F094CAB34A2B75A71F80B304 /* Build configuration list for PBXNativeTarget "GXSwiftRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E13F19FF15F490D9AA1C51C8AD29B3 /* Debug */,
+				C69DB428C13519F5B4B73EAADE420BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

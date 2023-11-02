@@ -1,0 +1,16 @@
+PODS:
+  - GXSwiftRouter (0.1.0)
+
+DEPENDENCIES:
+  - GXSwiftRouter (from `../`)
+
+EXTERNAL SOURCES:
+  GXSwiftRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GXSwiftRouter: 54682124d9e40c300be2147bba802855861ad5e0
+
+PODFILE CHECKSUM: 39b00aa6f77c32e4fdb8bc262d3814cf6351021f
+
+COCOAPODS: 1.12.1

@@ -1,0 +1,13 @@
+platform :ios, '10.0'
+
+use_frameworks!
+target 'GXSwiftRouter_Example' do
+  
+  pod 'GXSwiftRouter', :path => '../'
+
+  target 'GXSwiftRouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

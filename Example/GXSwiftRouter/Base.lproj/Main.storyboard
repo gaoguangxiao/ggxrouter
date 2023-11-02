@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FkJ-RW-9xV">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Xd5-qu-8nZ">
+            <objects>
+                <navigationController id="FkJ-RW-9xV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KPj-XT-JLo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="OBZ-V5-7P6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5L-q8-3Lu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1361" y="-42"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GXSwiftRouter_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSy-0r-b9k">
+                                <rect key="frame" x="137.5" y="243.5" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.59999999999999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NIz-C8-rYB"/>
+                                    <constraint firstAttribute="width" constant="100" id="Yq3-MG-5fq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="动作跳转">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="动作跳转:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vbK-xw-aqI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4V-LH-Ant">
+                                <rect key="frame" x="137.5" y="313.5" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.59999999999999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1fE-eX-Kxj"/>
+                                    <constraint firstAttribute="height" constant="40" id="amZ-We-v7c"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="无参跳转">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="无参跳转:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Su-2s-UwI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOT-or-XuJ">
+                                <rect key="frame" x="137.5" y="383.5" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.59999999999999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="K5q-ZQ-nv1"/>
+                                    <constraint firstAttribute="width" constant="100" id="wOs-z5-kCf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="有参跳转">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="有参数跳转:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3UR-zv-exM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m24-5N-c5E">
+                                <rect key="frame" x="137.5" y="443.5" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.59999999999999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VFv-2B-Kwr"/>
+                                    <constraint firstAttribute="width" constant="100" id="dDs-5c-hm1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="错误跳转">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="错误跳转:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XeY-h3-XlN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F4V-LH-Ant" firstAttribute="centerX" secondItem="aSy-0r-b9k" secondAttribute="centerX" id="Gps-xl-Qqk"/>
+                            <constraint firstItem="F4V-LH-Ant" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="S23-cS-lFq"/>
+                            <constraint firstItem="F4V-LH-Ant" firstAttribute="top" secondItem="aSy-0r-b9k" secondAttribute="bottom" constant="30" id="fJH-4L-pWD"/>
+                            <constraint firstItem="m24-5N-c5E" firstAttribute="centerX" secondItem="F4V-LH-Ant" secondAttribute="centerX" id="iNb-JK-g6I"/>
+                            <constraint firstItem="SOT-or-XuJ" firstAttribute="centerX" secondItem="F4V-LH-Ant" secondAttribute="centerX" id="lyF-zy-2sz"/>
+                            <constraint firstItem="F4V-LH-Ant" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="s6I-LN-sA0"/>
+                            <constraint firstItem="m24-5N-c5E" firstAttribute="top" secondItem="SOT-or-XuJ" secondAttribute="bottom" constant="20" id="sJF-3i-9cl"/>
+                            <constraint firstItem="SOT-or-XuJ" firstAttribute="top" secondItem="F4V-LH-Ant" secondAttribute="bottom" constant="30" id="xGB-uD-RFx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cYr-D9-bjb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="-43"/>
+        </scene>
+    </scenes>
+</document>

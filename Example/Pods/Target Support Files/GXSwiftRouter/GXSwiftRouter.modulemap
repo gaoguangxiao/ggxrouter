@@ -1,0 +1,6 @@
+framework module GXSwiftRouter {
+  umbrella header "GXSwiftRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}
