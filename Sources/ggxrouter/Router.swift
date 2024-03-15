@@ -38,12 +38,9 @@ public protocol RouterProtocol {
     
     public var scheme = ""
         
-    @objc public static func request(_ url:URL?,isPresent:Bool = false,
-                                     controller:UIViewController? = nil) {
-        
-        guard let url = url else {
-            return
-        }
+    public static func request(_ url: URL,
+                                     isPresent: Bool = false,
+                                     controller: UIViewController? = nil) throws -> Bool {
         
         //1、解析url中query参数
         var params : [String:Any] = [:]
@@ -65,7 +62,7 @@ public protocol RouterProtocol {
         }
         if let vcname = Router.pages[u_host] {
             //从'page'中查找该动作`host`对应的页面，有的话实现跳转
-            Router.share.openContoller(vcname, params: params)
+            return try Router.share.openContoller(vcname, params: params)
         } else {
             //从参数中解析跳转的，需要用到page，如果
             if let page = params["page"] as? String {
@@ -77,33 +74,36 @@ public protocol RouterProtocol {
                 }
                 print(newParams)
                 
-                Router.share.queryContoller(page, params:newParams)
+                return try Router.share.queryContoller(page, params:newParams)
             } else {
                 //无法解析page
                 print("host不得为空，或者增加参数page和page的值")
+                throw URLHandlerError.pageError
             }
         }
     }
     
     //查询controller
-    public func queryContoller(_ page:String,params:[String:Any]) {
+    public func queryContoller(_ page:String, params:[String:Any]) throws -> Bool{
         guard let vcname = Router.pages[page] else {
-            print("找不到合适的控制器")
-            return
+//            print("找不到合适的控制器")
+            throw URLHandlerError.pageError
         }
-        openContoller(vcname, params: params)
+        return try openContoller(vcname, params: params)
     }
     
     //跳转controller
-    public func openContoller(_ vcName:String,params:[String:Any]) {
-        guard let projectName = Bundle.main.infoDictionary?["CFBundleName"] as? String  else {
-            return
+    public func openContoller(_ vcName:String,params:[String:Any]) throws -> Bool {
+        guard let projectName = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
+            throw URLHandlerError.BundleError
         }
-        
-        if let any = NSClassFromString(projectName + "." + vcName) as? RouterProtocol.Type {
-            if let vc = any.create(params) as? UIViewController {
+                
+        if let any = NSClassFromString(projectName + "." + vcName) as? RouterProtocol.Type,
+           let vc = any.create(params) as? UIViewController {
                 onNextPage(vc)
-            }
+                return true
+        } else {
+            throw URLHandlerError.pageError
         }
     }
     

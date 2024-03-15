@@ -7,31 +7,41 @@
 //
 
 import Foundation
+import UIKit
 
 @objcMembers
-public class OpenURLHandler:NSObject {
-    static let share =  OpenURLHandler()
+public class OpenURLHandler: NSObject {
+    
+    public static let share = OpenURLHandler()
 
-    public static func handlerString(_ absoluteurl:String) {
+//    @available(iOS 13.0.0/*,*/ *)
+    @discardableResult
+    public static func handlerString(_ absoluteurl:String) throws -> Bool {
         guard let url = URL(string: absoluteurl) else {
-            return
+            throw URLHandlerError.urlstringError
         }
-        handler(url)
+        return try OpenURLHandler.share.handler(url)
     }
     
-    public static func handler(_ url:URL) {
+    @discardableResult
+    public func handler(_ url:URL) throws -> Bool {
+
         if url.isApp {
-            Router.request(url)
+            return try Router.request(url)
         } else {
             if UIApplication.shared.canOpenURL(url)  {
                 UIApplication.shared.open(url, options: [:]) { (_) in
+                    
                 }
+                return true
+            } else {
+                throw URLHandlerError.ApplicationNoCan
             }
         }
     }
 }
 
-extension URL {
+public extension URL {
     var isApp: Bool {
         guard let scheme = self.scheme else {
             return false

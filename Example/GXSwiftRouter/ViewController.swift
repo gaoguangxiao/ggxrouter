@@ -9,7 +9,7 @@
 import UIKit
 import GXSwiftRouter
 
-let schemeName = "appscheme"
+let schemeName = "adventure"
 
 class ViewController: UIViewController {
 
@@ -23,20 +23,37 @@ class ViewController: UIViewController {
     @IBAction func 动作跳转(_ sender: Any){
         //动作web有值，那么page之后的值会失效，以web寻址为主，找不到才会寻找page
 //        OpenURLHandler.handlerString("\(schemeName)://web?page=test1")
-        OpenURLHandler.handlerString("\(schemeName)://web?url=https://www.baidu.com")
+        
+        do {
+            try OpenURLHandler.handlerString("\(schemeName)://web?url=https://www.baidu.com")
+        } catch {
+            if let e = error as? URLHandlerError {
+                print("error:\(e.label))")
+            }
+        }
+        
     }
     
     @IBAction func 无参跳转(_ sender: Any) {
-        OpenURLHandler.handlerString("\(schemeName)://open?page=test1")
+        let _ = try? OpenURLHandler.handlerString("\(schemeName)://open?page=test1")
     }
     
     @IBAction func 有参数跳转(_ sender: Any) {
-        OpenURLHandler.handlerString("\(schemeName)://open?page=test2&Id=1&name=ggx")
+        let url = "adventure:///web?path=http%3A%2F%2Fwww.risekid.cn%2Fpolicy%2FuserProtocal.html" + "&page=web"
+        
+        do {
+            try OpenURLHandler.handlerString(url)
+        } catch {
+            if let e = error as? URLHandlerError {
+                print("error:\(e.label))")
+            }
+        }
+//        try? OpenURLHandler.handlerString("\(schemeName)://open?page=web&Id=1&name=ggx&url=https://www.baidu.com")
     }
     
     @IBAction func 错误跳转(_ sender: Any) {
         //跳转需要携带page参数，表示跳转的视图
-        OpenURLHandler.handlerString("\(schemeName)://open?Id=1&name=ggx")
+        try? OpenURLHandler.handlerString("\(schemeName)://open?Id=1&name=ggx")
     }
     
     override func didReceiveMemoryWarning() {

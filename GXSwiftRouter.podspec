@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'GXSwiftRouter/Classes/**/*'
+  s.source_files = 'Sources/ggxrouter/**/*'
   
   # s.resource_bundles = {
   #   'GXSwiftRouter' => ['GXSwiftRouter/Assets/*.png']
