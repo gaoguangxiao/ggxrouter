@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXSwiftRouter'
-  s.version          = '0.1.2'
-  s.summary          = '初始化路由跳转_'
+  s.version          = '0.1.3'
+  s.summary          = '提供SPM引用'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
