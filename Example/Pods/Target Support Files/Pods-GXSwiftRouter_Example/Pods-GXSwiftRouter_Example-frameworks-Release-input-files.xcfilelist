@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-GXSwiftRouter_Example/Pods-GXSwiftRouter_Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GGXSwiftExtension/GGXSwiftExtension.framework
 ${BUILT_PRODUCTS_DIR}/GXSwiftRouter/GXSwiftRouter.framework

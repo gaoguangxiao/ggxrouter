@@ -1,15 +1,22 @@
 PODS:
-  - GXSwiftRouter (0.1.2)
+  - GGXSwiftExtension (0.5.5)
+  - GXSwiftRouter (0.1.4):
+    - GGXSwiftExtension
 
 DEPENDENCIES:
   - GXSwiftRouter (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GGXSwiftExtension
 
 EXTERNAL SOURCES:
   GXSwiftRouter:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GXSwiftRouter: 5206d6bcb04a797497bc028f076a842dbd50e971
+  GGXSwiftExtension: 5a7e70c20be64f4f1cf02c063adcb76e1d2f8bcb
+  GXSwiftRouter: 378fa60a64dc23a85c356b137d495b830e5bce30
 
 PODFILE CHECKSUM: 35062f9b06b2c615fb88e4147e0f0e46e78af167
 

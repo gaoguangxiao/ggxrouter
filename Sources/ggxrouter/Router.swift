@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import GGXSwiftExtension
 
 public protocol RouterProtocol {
     static func create(_ params:[String:Any]?) -> RouterProtocol?
@@ -32,15 +32,15 @@ public protocol RouterProtocol {
     
     @objc public static let share = Router()
     
-//    @objc public static let universalUrl: String = "https://oabu.wecloudservice.com"
+    //    @objc public static let universalUrl: String = "https://oabu.wecloudservice.com"
     
     static private var pages = [String:String]()
     
     public var scheme = ""
-        
+    
     public static func request(_ url: URL,
-                                     isPresent: Bool = false,
-                                     controller: UIViewController? = nil) throws -> Bool {
+                               isPresent: Bool = false,
+                               controller: UIViewController? = nil) throws -> Bool {
         
         //1、解析url中query参数
         var params : [String:Any] = [:]
@@ -86,7 +86,7 @@ public protocol RouterProtocol {
     //查询controller
     public func queryContoller(_ page:String, params:[String:Any]) throws -> Bool{
         guard let vcname = Router.pages[page] else {
-//            print("找不到合适的控制器")
+            //            print("找不到合适的控制器")
             throw URLHandlerError.pageError
         }
         return try openContoller(vcname, params: params)
@@ -97,11 +97,11 @@ public protocol RouterProtocol {
         guard let projectName = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
             throw URLHandlerError.BundleError
         }
-                
+        
         if let any = NSClassFromString(projectName + "." + vcName) as? RouterProtocol.Type,
            let vc = any.create(params) as? UIViewController {
-                onNextPage(vc)
-                return true
+            onNextPage(vc)
+            return true
         } else {
             throw URLHandlerError.pageError
         }
@@ -112,6 +112,10 @@ public protocol RouterProtocol {
         var fromVC = fromController
         if fromVC == nil {
             fromVC = currentController
+        }
+        if fromVC?.isKind(of: UINavigationController.self) == true , let navVC = fromVC as? UINavigationController {
+            navVC.pushViewController(toController, animated: true)
+            return
         }
         if fromVC?.navigationController == nil {
             toController.modalPresentationStyle =  .fullScreen
@@ -127,46 +131,10 @@ public protocol RouterProtocol {
         }
     }
     
-    var currentController:UIViewController? {
-        let rootVC = getRootController()
-        return getTopController(rootVC)
-    }
-
-    
-    private func getTopController(_ controller:UIViewController? = nil) -> UIViewController? {
-        guard let vc = controller else { return nil }
-        if let presentVC = vc.presentedViewController {
-            return getTopController(presentVC)
-        } else if let tabVC = vc as? UITabBarController {
-            return getTopController(tabVC.selectedViewController)
-        } else if let nav = vc as? UINavigationController {
-            return getTopController(nav.visibleViewController)
-        } else {
-            return vc
-        }
-    }
-    
-    private func getRootController() -> UIViewController? {
-        var window: UIWindow?
-        if #available(iOS 13.0, *) {
-            let windowScenes = UIApplication.shared.connectedScenes
-                .filter({$0.activationState == .foregroundActive})
-                .map({$0 as? UIWindowScene}).compactMap({$0})
-            outer: for s in windowScenes {
-                for w in s.windows where w.isMember(of: UIWindow.self) {
-                    window = w
-                    break outer
-                }
-            }
-        }
-        window = window ?? UIApplication.shared.windows.first
-        if let vc = window?.rootViewController {
-            return vc
-        }
-        return nil
+    var currentController: UIViewController? {
+        return UIApplication.rootWindow?.rootViewController
     }
 }
-
 
 extension Router {
     public static func initPages(_ sourse:[String:String]) {
