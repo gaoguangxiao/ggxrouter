@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		024A05B2A73E75F2EBDB3A49 /* Pods_GXSwiftRouter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GXSwiftRouter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		183925EE1FE7D512D0280A7D /* GXSwiftRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GXSwiftRouter.podspec; path = ../GXSwiftRouter.podspec; sourceTree = "<group>"; };
+		183925EE1FE7D512D0280A7D /* GXSwiftRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GXSwiftRouter.podspec; path = ../GXSwiftRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1E258F432AF37E2D00C6697E /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
 		1E258F452AF37E3C00C6697E /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 		1E258F472AF37EC900C6697E /* RouterList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RouterList.plist; sourceTree = "<group>"; };

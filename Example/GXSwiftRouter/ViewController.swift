@@ -34,13 +34,15 @@ class ViewController: UIViewController {
         
     }
     
+    //:///代表了跳转界面
     @IBAction func 无参跳转(_ sender: Any) {
-        let _ = try? OpenURLHandler.handlerString("\(schemeName)://open?page=test1")
+        let _ = try? OpenURLHandler.handlerString("\(schemeName)://test1")
     }
     
+//adventure:///web?path=https%3A%2F%2Fwww.risekid.cn%2Fpolicy%2FuserProtocal.html
     @IBAction func 有参数跳转(_ sender: Any) {
-        let url = "adventure:///web?path=http%3A%2F%2Fwww.risekid.cn%2Fpolicy%2FuserProtocal.html" + "&page=web"
-        
+        // /web本身代表了跳转 web页
+        let url = "\(schemeName):///web?path=http%3A%2F%2Fwww.risekid.cn%2Fpolicy%2FuserProtocal.html"
         do {
             try OpenURLHandler.handlerString(url)
         } catch {

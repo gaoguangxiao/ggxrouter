@@ -64,8 +64,10 @@ public protocol RouterProtocol {
             //从'page'中查找该动作`host`对应的页面，有的话实现跳转
             return try Router.share.openContoller(vcname, params: params)
         } else {
-            //从参数中解析跳转的，需要用到page，如果
-            if let page = params["page"] as? String {
+            //从参数中解析跳转的，需要用到path()
+            let u_path = url.absoluteString.toPath
+            let page =  u_path.pathComponents.last
+            if let page {
                 var newParams = [String:Any]()
                 for (key,value) in params {
                     if key != "page" && key != "type" {
