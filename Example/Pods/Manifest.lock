@@ -1,7 +1,9 @@
 PODS:
   - GGXSwiftExtension (0.5.5)
-  - GXSwiftRouter (0.1.4):
+  - GXSwiftRouter (0.1.6):
     - GGXSwiftExtension
+    - SmartCodable
+  - SmartCodable (4.3.7)
 
 DEPENDENCIES:
   - GXSwiftRouter (from `../`)
@@ -9,6 +11,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - GGXSwiftExtension
+    - SmartCodable
 
 EXTERNAL SOURCES:
   GXSwiftRouter:
@@ -16,8 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GGXSwiftExtension: 5a7e70c20be64f4f1cf02c063adcb76e1d2f8bcb
-  GXSwiftRouter: 378fa60a64dc23a85c356b137d495b830e5bce30
+  GXSwiftRouter: f7e5436172e3ca402598d02e4364959060c1ba27
+  SmartCodable: 56babd0a912588ce299f2d0799633126f4c427c2
 
-PODFILE CHECKSUM: 35062f9b06b2c615fb88e4147e0f0e46e78af167
+PODFILE CHECKSUM: 506647e3243e12b73c3a223f8c82647d07376e1c
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.16.2

@@ -102,29 +102,35 @@ public protocol RouterProtocol {
         
         if let any = NSClassFromString(projectName + "." + vcName) as? RouterProtocol.Type,
            let vc = any.create(params) as? UIViewController {
-            onNextPage(vc)
+            //判断是否`present`
+            var present = false
+            if let pt = params["present"] as? String {
+                present = pt == "1"
+            }
+            onNextPage(vc,isPresent: present)
             return true
         } else {
             throw URLHandlerError.pageError
         }
     }
     
-    private func onNextPage(_ toController:UIViewController,fromController:UIViewController? = nil,isPresnet:Bool = false)
+    private func onNextPage(_ toController:UIViewController,fromController:UIViewController? = nil,isPresent:Bool = false)
     {
         var fromVC = fromController
         if fromVC == nil {
             fromVC = currentController
         }
-        if fromVC?.isKind(of: UINavigationController.self) == true , let navVC = fromVC as? UINavigationController {
-            navVC.pushViewController(toController, animated: true)
+        if fromVC?.isKind(of: UINavigationController.self) == true,
+            let navVC = fromVC as? UINavigationController {
+            if isPresent {
+                toController.modalPresentationStyle =  .fullScreen
+                navVC.present(toController, animated: true, completion: nil)
+            } else {
+                navVC.pushViewController(toController, animated: true)
+            }
             return
         }
-        if fromVC?.navigationController == nil {
-            toController.modalPresentationStyle =  .fullScreen
-            fromVC?.present(toController, animated: true, completion: nil)
-            return
-        }
-        if isPresnet {
+        if isPresent {
             toController.modalPresentationStyle =  .fullScreen
             fromVC?.present(toController, animated: true, completion: nil)
         } else {
