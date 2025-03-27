@@ -15,7 +15,7 @@ public enum OrientationType : String {
     case portrait     //竖屏
 }
 
-public struct OpenAppViewModel: SmartCodable {
+public struct RouterAppInfoModel: SmartCodable {
     public var path: String?
     
     //App横竖屏方向
