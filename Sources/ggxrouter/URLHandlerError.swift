@@ -13,7 +13,7 @@ public enum URLHandlerError: Error {
     case ApplicationNoCan //app无法打开
     case pageError //缺少page
     case BundleError
-    
+    case pathError //缺少path
     
     public var label: String {
         switch self {
@@ -23,6 +23,8 @@ public enum URLHandlerError: Error {
             return "无法打开"
         case .pageError:
             return "控制器未注册或没有此控制器"
+        case .pathError:
+            return "path有值但未在白名单中"
         case .BundleError:
             return "bundle错误"
         }

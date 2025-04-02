@@ -10,24 +10,6 @@ import Foundation
 import UIKit
 import GGXSwiftExtension
 
-public protocol RouterProtocol {
-    static func create(_ params:[String:Any]?) -> RouterProtocol?
-}
-
-//func QualityUrl(path: String) -> String {
-//    if  gQualityURL.last != "/" && path.first != "/" {
-//        return gQualityURL + "/" + path
-//    }
-//    return gQualityURL + path
-//}
-//
-//func H5Url(path: String) -> String {
-//    if  gH5BaseURL.last != "/" && path.first != "/" {
-//        return gH5BaseURL + "/" + path
-//    }
-//    return gH5BaseURL + path
-//}
-
 @objc public class Router: NSObject {
     
     @objc public static let share = Router()
@@ -35,6 +17,14 @@ public protocol RouterProtocol {
     //    @objc public static let universalUrl: String = "https://oabu.wecloudservice.com"
     
     static private var pages = [String:String]()
+    
+    //唯一性的控制器，仅存在一个，可pop返回
+    public var uniquePages = [String]()
+    
+    //只有包含在uri的才可以跳转
+    public var whiteUri = [String]()
+    
+    public var fromHomepage: UIViewController?
     
     public var scheme = ""
     
@@ -96,16 +86,80 @@ public protocol RouterProtocol {
     
     //跳转controller
     public func openContoller(_ vcName:String,params:[String:Any]) throws -> Bool {
+        
+        //获取params的path值，是否包含在白名单中
+        let paramsData = RouterAppInfoModel.deserialize(from: params)
+        if let path = paramsData?.path {
+            //包括path，那么path必须有效
+            var iscontains = false
+            Router.share.whiteUri.forEach { element in
+                if path.contains(element) {
+                    iscontains = true
+                }
+            }
+            guard iscontains else {
+                throw URLHandlerError.pathError
+            }
+        }
+        
         guard let projectName = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
             throw URLHandlerError.BundleError
         }
         
+        //查看工程中是否存在控制器的类
+        guard let projectClass = NSClassFromString(projectName + "." + vcName) else {
+            throw URLHandlerError.pageError
+        }
+        
+        //要显示的`vcName`属于主控制器
+        if Router.share.uniquePages.contains(vcName) {
+            //获取最上层的控制器
+            let activeVc = UIApplication.visibleViewController
+            guard let routerVc = activeVc as? RouterProtocol else {
+                //请实现协议
+                throw URLHandlerError.ApplicationNoCan
+            }
+            //判断最上层控制器是否是主控制器
+            if let isMember = activeVc?.isMember(of: projectClass) , isMember == true{
+                routerVc.reloadCreate(params)
+                //属于的话直接刷新，否则仅
+                print("当前控制器是主控制器:\(projectClass)")
+                return true
+            }
+            //最上层的控制器非主控制器，那么实现pop返回
+            if let navVC = activeVc?.navigationController as? UINavigationController {
+                print("当前控制器非主控制器:\(navVC)")
+                var mainVc: RouterProtocol?
+                //在栈中遍历，判断是否具有`maniVc`
+                navVC.viewControllers.forEach { element in
+                    let isMainVc = element.isMember(of: projectClass)
+                    if isMainVc,
+                       let routerVc = element as? RouterProtocol {
+                        mainVc = routerVc
+                    }
+                }
+                
+                //找到`mainVc`，刷新此页数据
+                if let mainVc, let activeVc {
+                    if routerVc.present {
+                        PushTransition.dismissRootWithTransition(VC: activeVc)
+                    } else {
+                        activeVc.popToRoot()
+                    }
+//                    print("目标主控制器:\(mainVc)")
+                    //并刷新数据
+                    mainVc.reloadCreate(params)
+                    return true
+                }
+            }
+        }
+        
+        //如果`vcName`是主控制器
         if let any = NSClassFromString(projectName + "." + vcName) as? RouterProtocol.Type,
            let vc = any.create(params) as? UIViewController {
-            //判断是否`present`
             var present = false
-            if let pt = params["present"] as? String {
-                present = pt == "1"
+            if let pt = paramsData?.present {
+                present = pt
             }
             onNextPage(vc,isPresent: present)
             return true
@@ -116,20 +170,18 @@ public protocol RouterProtocol {
     
     private func onNextPage(_ toController:UIViewController,fromController:UIViewController? = nil,isPresent:Bool = false)
     {
-        var fromVC = fromController
-        if fromVC == nil {
-            fromVC = currentController
-        }
-        if fromVC?.isKind(of: UINavigationController.self) == true,
-            let navVC = fromVC as? UINavigationController {
+        let fromVC = UIApplication.visibleViewController
+        if let navVC = fromVC?.navigationController as? UINavigationController,
+           let fromVC {
             if isPresent {
-                toController.modalPresentationStyle =  .fullScreen
-                navVC.present(toController, animated: true, completion: nil)
+                PushTransition.pushWithTransition(fromVC: fromVC, toVC: toController, type: .fromBottom, duration: 0.5)
             } else {
                 navVC.pushViewController(toController, animated: true)
             }
             return
         }
+        
+        
         if isPresent {
             toController.modalPresentationStyle =  .fullScreen
             fromVC?.present(toController, animated: true, completion: nil)

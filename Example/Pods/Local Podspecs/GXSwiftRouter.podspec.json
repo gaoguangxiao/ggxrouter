@@ -1,7 +1,7 @@
 {
   "name": "GXSwiftRouter",
-  "version": "0.1.6",
-  "summary": "change:path为跳转路径",
+  "version": "0.2.2",
+  "summary": "change: 支持present推出控制器",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao",
   "license": {
@@ -13,14 +13,16 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/ggxrouter.git",
-    "tag": "0.1.6"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "11.0"
   },
+  "swift_versions": "5.0",
   "source_files": "Sources/ggxrouter/**/*",
   "dependencies": {
     "GGXSwiftExtension": [],
     "SmartCodable": []
-  }
+  },
+  "swift_version": "5.0"
 }
