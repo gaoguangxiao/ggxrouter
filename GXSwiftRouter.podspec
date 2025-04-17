@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXSwiftRouter'
-  s.version          = '0.3.1'
+  s.version          = '0.3.2'
   s.summary          = 'change: 修复host()16.3闪退问题'
 
 # This description is used to generate tags and improve search results.
