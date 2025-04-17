@@ -40,16 +40,15 @@ import GGXSwiftExtension
         
         //判断url.host：web、open，看是否能够找到界面，URLScheme中称为动作，如果`动作`可以在配置
         var u_host = ""
-        if #available(iOS 16.0, *) {
-            if let _host = url.host() {
-                u_host = _host
-            }
-        } else {
-            // Fallback on earlier versions
+//        if #available(iOS 16.0, *) {
+//            if let _host = url.host() {
+//                u_host = _host
+//            }
+//        } else {
             if let _host = url.host {
                 u_host = _host
             }
-        }
+//        }
         if let vcname = Router.pages[u_host] {
             //从'page'中查找该动作`host`对应的页面，有的话实现跳转
             return try Router.share.openContoller(vcname, params: params)
