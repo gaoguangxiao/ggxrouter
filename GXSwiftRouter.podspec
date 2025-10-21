@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXSwiftRouter'
-  s.version          = '0.3.2'
-  s.summary          = 'change: 修复host()16.3闪退问题'
+  s.version          = '0.3.3'
+  s.summary          = 'change: 路径优化'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

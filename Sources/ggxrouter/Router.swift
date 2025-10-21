@@ -84,7 +84,7 @@ import GGXSwiftExtension
     }
     
     //跳转controller
-    public func openContoller(_ vcName:String,params:[String:Any]) throws -> Bool {
+    public func openContoller(_ vcName:String,params:[String:Any], project: String? = nil) throws -> Bool {
         
         //获取params的path值，是否包含在白名单中
         let paramsData = RouterAppInfoModel.deserialize(from: params)
@@ -100,9 +100,12 @@ import GGXSwiftExtension
                 throw URLHandlerError.pathError
             }
         }
-        
-        guard let projectName = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
+        //模块间耦合
+        guard var projectName = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
             throw URLHandlerError.BundleError
+        }
+        if let project {
+            projectName = project
         }
         
         //查看工程中是否存在控制器的类
