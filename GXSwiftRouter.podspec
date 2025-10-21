@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXSwiftRouter'
-  s.version          = '0.3.3'
+  s.version          = '0.3.4'
   s.summary          = 'change: 路径优化'
 
 # This description is used to generate tags and improve search results.
